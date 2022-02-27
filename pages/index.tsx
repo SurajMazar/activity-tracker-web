@@ -31,7 +31,7 @@ const Home: NextPage = () => {
     useEffect(()=>{
         setTimeout(()=>{
             generateColorPalette()
-        },50)
+        },1000)
     },[active])
 
 
