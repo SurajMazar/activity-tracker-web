@@ -7,9 +7,11 @@ import ColorThief from 'colorthief'
  */
 const getColor = (image) => {
     return new Promise(function (resolve) {
-        if(image && image.width && image.width>0){
-            const colorthief = new ColorThief();
-            resolve(colorthief.getPalette(image, 2))
+        if(image){
+            image.addEventListener('load',()=>{
+                const colorthief = new ColorThief();
+                resolve(colorthief.getPalette(image, 2))
+            })
         }
     })
 }
