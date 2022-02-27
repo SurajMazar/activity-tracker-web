@@ -1,8 +1,8 @@
 import { NextPage } from "next"
 import { useEffect, useState } from "react"
-import { getColorPalet } from "../utils/color.utils"
+import { getColorPalet } from "../../../utils/color.utils"
 
-const Home: NextPage = () => {
+const Login: NextPage = () => {
 
     // @component states
     const [palette, setPalette] = useState<Array<string>>([])
@@ -65,4 +65,4 @@ const Home: NextPage = () => {
     )
 }
 
-export default Home
+export default Login
