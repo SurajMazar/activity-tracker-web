@@ -49,7 +49,7 @@ const Home: NextPage = () => {
         }}>
             <div className="w-2/3">
                 <div className="flex items-center justify-center">
-                    <div className="w-1/2 h-full relative">
+                    <div className="w-full md:w-1/2 h-full relative">
                         <img src={`/auth/auth-${active}.jpg`} alt="" id="auth-image" className="w-full object-cover" />
                         <div className="absolute top-0 left-0 h-full w-full flex items-center justify-center">
                             <button className="bg-white p-2 text-black" onClick={changeImage}>
