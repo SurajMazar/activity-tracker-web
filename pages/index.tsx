@@ -29,7 +29,7 @@ const Home: NextPage = () => {
     }
 
     useEffect(()=>{
-            generateColorPalette()
+      generateColorPalette()
     },[active])
 
 
@@ -42,10 +42,10 @@ const Home: NextPage = () => {
     }
 
     return (
-        <div className="flex p-8 justify-center items-center h-full h-screen" style={{
+        <div className="flex p-4 justify-center items-center h-full h-screen" style={{
             background:generateGradientCss()
         }}>
-            <div className="w-2/3">
+            <div className="w-full md:w-1/2 ">
                 <div className="flex items-center justify-center">
                     <div className="w-full md:w-1/2 h-full relative">
                         <img src={`/auth/auth-${active}.jpg`} alt="" id="auth-image" className="w-full object-cover" />
