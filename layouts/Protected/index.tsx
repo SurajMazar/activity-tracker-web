@@ -28,7 +28,7 @@ const Protected: React.FC = ({ children }) => {
     
 
     return (<>
-        {authenticated ? <>{children}</> : ''}
+        {authenticated ? <div className="__protected">{children}</div> : ''}
     </>)
 }
 

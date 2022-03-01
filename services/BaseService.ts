@@ -2,8 +2,8 @@ import { message } from "antd"
 
 class BaseService {
 
-    public handleError(err:any){
-        const error = err.response.data
+    protected handleError(err:any){
+        const error = err.response?err.response.data?err.response.data:undefined:undefined
         let formattedError:{
             message?:string
             data?:any
