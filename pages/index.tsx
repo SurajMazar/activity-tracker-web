@@ -8,5 +8,6 @@ const Home: NextPageWithLayout = () => {
   )
 }
 
-Home.layout = layoutTypes.auth
+Home.layout = layoutTypes.app
+
 export default Home

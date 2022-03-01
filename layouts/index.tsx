@@ -1,4 +1,5 @@
 import layoutTypes from "../config/layoutTypes";
+import { applyAppLayout } from "./App";
 import { applyAuthLayout } from "./Auth";
 
 /**
@@ -11,7 +12,7 @@ const applyLayout = (page:React.ReactElement,layout:keyof typeof layoutTypes|und
     switch(layout){
 
         case layoutTypes.app: 
-            return page
+            return applyAppLayout(page)
         
         case layoutTypes.auth:
             return applyAuthLayout(page)

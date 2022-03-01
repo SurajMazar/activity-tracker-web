@@ -46,12 +46,12 @@ const AuthLayout:React.FC = ({children}) =>{
         <div className="flex p-4 justify-center items-center h-screen" style={{
             background:generateGradientCss()
         }}>
-            <div className="w-full md:w-2/3 bg-white shadow-lg">
+            <div className="w-full lg:w-2/3 bg-white shadow-lg">
                 <div className="flex items-center justify-center">
-                    <div className="w-full md:w-1/2 h-[450px]">
+                    <div className="w-full lg:w-1/2 h-[450px] hidden md:block">
                         <img src={`/auth/auth-${active}.jpg`} alt="" id="auth-image" className="w-full h-full  object-cover" />
                     </div>
-                    <div className="w-1/2 h-full">
+                    <div className="w-full sm:w-2/3 lg:w-1/2 h-full">
                         {children}
                     </div>
                 </div>
